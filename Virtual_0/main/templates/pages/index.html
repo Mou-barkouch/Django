@@ -1,16 +1,5 @@
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% extends 'base.html' %}
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Name : {{name|capfirst}}.</h1>
-    <h1>Last Name : {{lname|default:'Not found.'}}.</h1>
-    <h1>Age : {{age|add:'years'}}.</h1>
-</body>
-</html>
+{% block content %}
+index 
+{% endblock content %}
