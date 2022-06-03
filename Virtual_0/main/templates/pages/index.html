@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Name : {{name}}.</h1>
-    <h1>Name : {{age}}.</h1>
+    <h1>Name : {{name|capfirst}}.</h1>
+    <h1>Last Name : {{lname|default:'Not found.'}}.</h1>
+    <h1>Age : {{age|add:'years'}}.</h1>
 </body>
 </html>
