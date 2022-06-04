@@ -1,9 +1,10 @@
 from django.shortcuts import render
+from .models import Product 
 
 # Create your views here.
 
-def product(request):
+def products(request):
     return render(request, 'products/products.html')
 
 def product(request):
-    return render(request, 'products/product.html')
+    return render(request, 'products/product.html',{'name':'Ahmed'})
