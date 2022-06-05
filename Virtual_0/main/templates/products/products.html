@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-    <h3>{{x.name}}</h3>
-    <h3>{{x.content}}</h3>
-
+{% for x in pro %}
+    <h3><p>Nom : </p>{{x.name}}</h3>
+    <h3><p>Description : </p>{{x.content}}</h3>
+    <h3><p>Price : </p>{{x.Price}}</h3>
+{% endfor %}
 {% endblock content %}
