@@ -7,7 +7,6 @@ class Product(models.Model):
     x =  [
         ("banana", "banana"),
         ("apple", "Apple")
-    
     ]
 
     name = models.CharField(max_length=100)
@@ -24,5 +23,16 @@ class Product(models.Model):
         verbose_name = 'Phone'
         ordering = ['-price'] # -:desc
 
-    class Test(models.Model):
+class Test(models.Model):
         date = models.DateField()
+
+class User(models.Model):
+    name = models.CharField(max_length=50, null=True)
+    products = models.ForeignKey(Product, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.name
+
+class Product(models.Model):
+    title = models.CharField(max_length=50, null=True)
+    def __str__(self):
+        return self.title
