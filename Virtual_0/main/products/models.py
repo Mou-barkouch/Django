@@ -23,3 +23,6 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Phone'
         ordering = ['-price'] # -:desc
+
+    class Test(models.Model):
+        date = models.DateField()
